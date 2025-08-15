@@ -2,7 +2,7 @@
 
 A Google Flights–style flight search interface built with **React**, **TypeScript**, **Tailwind CSS**, and **CSS Modules**.
 
-![Preview](./src/assets/images/preview.png)
+![Preview](./src/assets/images/GoogleFlights.png)
 
 ## Table of Contents
 
