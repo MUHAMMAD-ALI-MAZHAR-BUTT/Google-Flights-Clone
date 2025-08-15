@@ -184,8 +184,8 @@ npm run preview
 Create `.env` in root directory with your API keys:
 
 ```env
-VITE_API_KEY=your_flight_data_api_key
-VITE_API_ENDPOINT=https://api.flightdata.example.com
+VITE_RAPIDAPI_KEY=your_flight_data_api_key
+VITE_RAPIDAPI_HOST=api.flightdata.example
 ```
 
 ## Contributing
