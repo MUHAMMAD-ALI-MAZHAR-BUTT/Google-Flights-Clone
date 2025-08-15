@@ -1,0 +1,134 @@
+.header {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-light);
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all var(--transition-normal);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--primary-blue), #4285f4);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+.navLink.active {
+  color: var(--primary-blue);
+  background-color: var(--secondary-blue);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  padding: 8px;
+  outline: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.themeToggle:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+.mobileMenu {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.mobileNav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-light);
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .logoText {
+    font-size: 18px;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+}
